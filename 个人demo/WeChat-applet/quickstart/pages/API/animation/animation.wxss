@@ -1,0 +1,30 @@
+
+.animation-element-wrapper {
+  margin-bottom: 20px;
+}
+.animation-element {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #1AAD19;
+}
+.animation-buttons {
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-grow: 1;
+  overflow-y: scroll;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+}
+.animation-button {
+  width: 90%;
+  margin: 5%; 
+}
+.animation-button-reset {
+  width: 100px;
+  margin: 10px auto; 
+}

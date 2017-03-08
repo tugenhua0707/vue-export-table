@@ -1,0 +1,22 @@
+<import src="../common/header.wxml" />
+<import src="../common/footer.wxml" />
+
+<view class='container'>
+  <template is='header' data="{{title: 'animation动画标题'}}"></template>
+  <view class='page-body'>
+    <view class='animation-element-wrapper'>
+      <view class='animation-element' animation="{{animationData}}"></view>
+    </view>
+    <view class='animation-buttons' scroll-y='true'>
+      <button class='animation-button' bindtap='reset'>reset</button>
+      <button class='animation-button' bindtap='rotate'>rotate</button>
+      <button class='animation-button' bindtap='scale'>scale</button>
+      <button class='animation-button' bindtap='translate'>translate</button>
+      <button class='animation-button' bindtap='skew'>skew</button>
+      <button class='animation-button' bindtap='rotateAndScale'>rotateAndScale</button>
+      <button class='animation-button' bindtap='rotateAndScaleThenTranslate'>rotateAndScaleThenTranslate</button>
+      <button class='animation-button' bindtap='allInQueue'>allInQueue</button>
+    </view>
+  </view>
+  <template is='footer' data="{{title:'这是底部', time: '2009-2016'}}"></template>
+</view>

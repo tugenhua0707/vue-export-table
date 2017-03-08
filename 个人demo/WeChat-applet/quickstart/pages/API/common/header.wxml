@@ -1,0 +1,5 @@
+<template name='header'>
+  <view class='page-header'>
+    <text class='page-header-text' style="float:left; margin: 10px auto">{{title}}</text>
+  </view>
+</template>
