@@ -1,0 +1,18 @@
+{
+  // 设定转码规则
+  "presets": [
+    ["env", {
+      "modules": false
+    }],
+    "stage-2"
+  ],
+  // 转码使用的插件
+  "plugins": ["transform-runtime"],
+  // 对BABEL_ENV或者 NODE_ENV指定不同的环境变量，进行不同的编译操作
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": ["transform-es2015-modules-commonjs", "dynamic-import-node"]
+    }
+  }
+}
